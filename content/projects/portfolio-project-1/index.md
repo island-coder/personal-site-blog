@@ -12,16 +12,19 @@ lastmod:
 expiryDate: 
 publishDate: 
 
-feature_image: web-design.jpg
-feature_image_alt: Web design
+feature_image: 
+feature_image_alt:
 
 project types: 
-    - Personal
+    - IOT
 
 techstack:
     - Arduino
-live_url: https://hugo-liftoff.netlify.app
-source_url: https://github.com/wjh18/hugo-liftoff
+    - Raspberry Pie
+    - Python
+    - Twillio
+live_url: 
+source_url: 
 ---
 
 This article offers a sample of basic Markdown syntax that can be used in Hugo content files, also it shows whether basic HTML elements are decorated with CSS in a Hugo theme.

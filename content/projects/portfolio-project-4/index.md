@@ -6,7 +6,7 @@ description: Portfolio Project 4 is my fourth portfolio project.
 slug: portfolio-project-4
 author: John Doe
 
-draft: false
+draft: true
 date: 2022-02-20T03:52:30-05:00
 lastmod: 
 expiryDate: 
@@ -23,8 +23,8 @@ techstack:
     - HTML/CSS
     - JavaScript
     - Netlify
-live_url: https://hugo-liftoff.netlify.app
-source_url: https://github.com/wjh18/hugo-liftoff
+live_url: 
+source_url:
 ---
 
 This article offers a sample of basic Markdown syntax that can be used in Hugo content files, also it shows whether basic HTML elements are decorated with CSS in a Hugo theme.

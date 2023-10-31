@@ -5,9 +5,7 @@
   </section>
 </div>
 <div class="about">
-  {{ if eq .Site.Params.about_page_socials true }}
 
-  {{ end }}
 
   {{ $image := resources.Get "images/profile_1.png" }}
   <div>
@@ -18,6 +16,10 @@
   <article class="single-container markdown">
     {{ .Content }}
   </article>
-  <div class="container--sm">{{ partial "general/social-links.html" . }}</div>
+
+  <!-- {{ if eq .Site.Params.about_page_socials true }}
+
+  {{ end }}
+  <div class="container--sm">{{ partial "general/social-links.html" . }}</div> -->
 </div>
 {{ end }}

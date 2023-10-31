@@ -1,30 +1,33 @@
 ---
-title: Portfolio Project 2
-seo_title: Portfolio Project 2
-summary: Portfolio Project 2 is my second portfolio project.
-description: Portfolio Project 2 is my second portfolio project.
+title: Digital Councelling platform
+seo_title: Councelling platform App
+summary: Full stack app created using Flask for mental health provisions for incarcerated individuals.
+description: Full stack app created using Flask for mental health provisions for incarcerated individuals.
 slug: portfolio-project-2
 author: John Doe
 
-draft: true
+draft: false
 date: 2020-02-20T03:52:30-05:00
 lastmod: 
 expiryDate: 
 publishDate: 
 
-feature_image: website.jpg
-feature_image_alt: Website
+feature_image: 
+feature_image_alt:
 
 project types: 
     - Personal
 
 techstack:
-    - Hugo
+    - Python
+    - Flask
+    - Jinja2
+    - SQL
     - HTML/CSS
     - JavaScript
-    - Netlify
-live_url: https://hugo-liftoff.netlify.app
-source_url: https://github.com/wjh18/hugo-liftoff
+
+live_url:
+source_url:
 ---
 
 This article offers a sample of basic Markdown syntax that can be used in Hugo content files, also it shows whether basic HTML elements are decorated with CSS in a Hugo theme.
