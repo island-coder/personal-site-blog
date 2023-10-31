@@ -1,0 +1,23 @@
+{{ define "main" }}
+<div class="container">
+  <section class="page-header--c">
+    <h1 class="page-header-title">{{ .Title }}</h1>
+  </section>
+</div>
+<div class="about">
+  {{ if eq .Site.Params.about_page_socials true }}
+
+  {{ end }}
+
+  {{ $image := resources.Get "images/profile_1.png" }}
+  <div>
+    <img src="{{ $image.RelPermalink }}" width="{{ $image.Width}}" height="{{ $image.Height }}" style="  width: 100%;
+    height: auto; padding-inline: min(5rem,5vw); border-radius: 5%;">
+  </div>
+
+  <article class="single-container markdown">
+    {{ .Content }}
+  </article>
+  <div class="container--sm">{{ partial "general/social-links.html" . }}</div>
+</div>
+{{ end }}
