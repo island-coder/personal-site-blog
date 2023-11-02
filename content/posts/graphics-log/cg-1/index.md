@@ -12,13 +12,13 @@ lastmod:
 expiryDate: 
 publishDate: 
 
-feature_image: 
-feature_image_alt: 
+feature_image:  image.jpg
+feature_image_alt: Computer generated cube floating
 
 categories:
+tags:
     - Computer Graphics
     - OpenGL
-tags:
 series: 
     - Graphics Log
 
