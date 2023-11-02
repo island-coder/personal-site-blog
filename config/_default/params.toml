@@ -5,10 +5,10 @@ disallow_search_engines = false # Disallow search engine crawling in robots.txt
 
 ### Content
 favicon = true # Enable favicon, add your favicon files to /static/ directory
-# avatar = 'avatar.png' # Custom avatar image in /assets/
-grayscale_avatar = true # Add a grayscale filter to the avatar image
-author = 'John Doe' # Default author for <head> meta
-description = "Personal blog and portfolio site of John Doe." # Add a global meta description to <head>
+avatar = 'avatar.png' # Custom avatar image in /assets/
+grayscale_avatar = false # Add a grayscale filter to the avatar image
+author = 'Vihanga Marasinghe' # Default author for <head> meta
+description = "Personal blog and portfolio site of Vihanga Marasinghe." # Add a global meta description to <head>
 footer_text = "Built with [Hugo Liftoff](https://github.com/wjh18/hugo-liftoff) theme." # Customize footer text
 fallback_text = "No content available yet. Coming soon." # Fallback text for empty content
 label_drafts = true # Add a label indicator next to the title of any built drafts (dev only)
@@ -49,10 +49,10 @@ about_page_socials = true
 # Enable or disable individual social icons
 [social.links]
   # twitter = "username"
-  github = "island-coders"
+  github = "island-coder"
   # stack_overflow = "userid/username" # include user id
   email = "vihangamara@gmail.com"
-  linkedin = "vihanga-marasinghe" # Comment out to disable
+  linkedin = "vihangamara" # Comment out to disable
   # mastodon_server = "example.social" # include subdomains if relevant, scheme not needed (defaults to https)
   # mastodon_user = "username" # don't include preceding @
 

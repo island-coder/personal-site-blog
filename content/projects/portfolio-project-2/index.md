@@ -16,6 +16,7 @@ feature_image:
 feature_image_alt:
 
 project types: 
+    - Fullstack
     - Personal
 
 techstack:

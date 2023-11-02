@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Vihanga Marasinghe</title>
+    <link>https://vihanga-marasinghe.netlify.app/categories/computer-graphics/</link>
+    <description>Recent content in Computer Graphics on Vihanga Marasinghe</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 01 Nov 2023 14:22:30 +0530</lastBuildDate><atom:link href="https://vihanga-marasinghe.netlify.app/categories/computer-graphics/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Animated Clock using 2D Graphics</title>
+      <link>https://vihanga-marasinghe.netlify.app/posts/cg-2/</link>
+      <pubDate>Wed, 01 Nov 2023 14:22:42 +0530</pubDate>
+      
+      <guid>https://vihanga-marasinghe.netlify.app/posts/cg-2/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Intro into Computer Graphics</title>
+      <link>https://vihanga-marasinghe.netlify.app/posts/cg-1/</link>
+      <pubDate>Wed, 01 Nov 2023 14:22:30 +0530</pubDate>
+      
+      <guid>https://vihanga-marasinghe.netlify.app/posts/cg-1/</guid>
+      <description>reflective Log for CS307 &amp; CS308</description>
+    </item>
+    
+  </channel>
+</rss>

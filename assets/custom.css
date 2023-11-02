@@ -1,1 +1,15 @@
-/* Add custom CSS */
+
+/* Separate overrides for light and dark */
+
+.hero-title{
+    
+}
+
+:root {
+
+
+
+}
+[data-theme="dark"] {
+    --color-primary: rgb(103, 170, 249);
+}
