@@ -30,5 +30,4 @@ social_share: true
 newsletter: false
 disable_comments: false
 ---
-
-Developed and presented an IOT/Edge device that can help prevent and detect traffic accidents.
+Our team mangaged to become runners up for developing and presenting an IOT/Edge device that can help prevent and detect traffic accidents.
