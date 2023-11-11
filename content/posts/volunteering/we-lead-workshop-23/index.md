@@ -22,7 +22,7 @@ series:
 toc: true
 related: true
 social_share: true
-newsletter: true
+newsletter: false
 disable_comments: false
 ---
 Co-organized the workshop to help promote skills among undergraduates in line with the We Lead Career Fair 2023 - University of Peradeniya.
