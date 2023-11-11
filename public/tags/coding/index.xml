@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Vihanga Marasinghe</title>
+    <link>https://vihanga-marasinghe.netlify.app/tags/coding/</link>
+    <description>Recent content in Coding on Vihanga Marasinghe</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 02 Nov 2023 21:12:07 +0530</lastBuildDate><atom:link href="https://vihanga-marasinghe.netlify.app/tags/coding/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ACES Hackathon 23</title>
+      <link>https://vihanga-marasinghe.netlify.app/hackathons/aces-hackathon-23/</link>
+      <pubDate>Thu, 02 Nov 2023 21:12:07 +0530</pubDate>
+      
+      <guid>https://vihanga-marasinghe.netlify.app/hackathons/aces-hackathon-23/</guid>
+      <description>Ideathon/Hackathon</description>
+    </item>
+    
+    <item>
+      <title>ACES Coders 23</title>
+      <link>https://vihanga-marasinghe.netlify.app/hackathons/aces-coders-23/</link>
+      <pubDate>Thu, 02 Nov 2023 21:09:12 +0530</pubDate>
+      
+      <guid>https://vihanga-marasinghe.netlify.app/hackathons/aces-coders-23/</guid>
+      <description>12 hour coding competition held at the Faculty of Engineering University of Peradeniya</description>
+    </item>
+    
+    <item>
+      <title>Animated Clock using 2D Graphics</title>
+      <link>https://vihanga-marasinghe.netlify.app/graphics-log/cg-2/</link>
+      <pubDate>Wed, 01 Nov 2023 14:22:42 +0530</pubDate>
+      
+      <guid>https://vihanga-marasinghe.netlify.app/graphics-log/cg-2/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Intro into Computer Graphics</title>
+      <link>https://vihanga-marasinghe.netlify.app/graphics-log/cg-1/</link>
+      <pubDate>Wed, 01 Nov 2023 14:22:30 +0530</pubDate>
+      
+      <guid>https://vihanga-marasinghe.netlify.app/graphics-log/cg-1/</guid>
+      <description>Reflective Log for CS307 &amp; CS308</description>
+    </item>
+    
+    <item>
+      <title>Gavel Club Orientation 2023 - Faculty of Science - Univeristy of Peradeniya</title>
+      <link>https://vihanga-marasinghe.netlify.app/volunteering/gavel-orientation-fos-23/</link>
+      <pubDate>Sun, 01 Oct 2023 00:00:00 +0530</pubDate>
+      
+      <guid>https://vihanga-marasinghe.netlify.app/volunteering/gavel-orientation-fos-23/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Pera Gavel AGM 2023</title>
+      <link>https://vihanga-marasinghe.netlify.app/volunteering/gavel-agm-23/</link>
+      <pubDate>Thu, 30 Mar 2023 00:00:00 +0530</pubDate>
+      
+      <guid>https://vihanga-marasinghe.netlify.app/volunteering/gavel-agm-23/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>We Lead Career Workshop 23</title>
+      <link>https://vihanga-marasinghe.netlify.app/volunteering/we-lead-workshop-23/</link>
+      <pubDate>Wed, 01 Mar 2023 00:00:00 +0530</pubDate>
+      
+      <guid>https://vihanga-marasinghe.netlify.app/volunteering/we-lead-workshop-23/</guid>
+      <description>Co-organized the workshop to help promote skills among undergraduates in line with the We Lead Career Fair 2023.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,7 +1,7 @@
 ---
 title: IOT Project
 seo_title: IOT Project
-summary: IOT Project done for CS206
+summary: Remote safety analysis of laboratories.
 description: Remotely measuring safety of laboratories.
 slug: portfolio-project-1
 author: Vihanga Marasinghe

@@ -2,7 +2,77 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://vihanga-marasinghe.netlify.app/posts/cg-2/</loc>
+    <loc>https://vihanga-marasinghe.netlify.app/hackathons/aces-hackathon-23/</loc>
+    <lastmod>2023-11-02T21:12:07+05:30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://vihanga-marasinghe.netlify.app/tags/coding/</loc>
+    <lastmod>2023-11-02T21:12:07+05:30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://vihanga-marasinghe.netlify.app/tags/computer-vision/</loc>
+    <lastmod>2023-11-02T21:12:07+05:30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://vihanga-marasinghe.netlify.app/tags/hackathons/</loc>
+    <lastmod>2023-11-02T21:12:07+05:30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://vihanga-marasinghe.netlify.app/series/hackathons/</loc>
+    <lastmod>2023-11-02T21:12:07+05:30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://vihanga-marasinghe.netlify.app/hackathons/</loc>
+    <lastmod>2023-11-02T21:12:07+05:30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://vihanga-marasinghe.netlify.app/</loc>
+    <lastmod>2023-11-02T21:12:07+05:30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://vihanga-marasinghe.netlify.app/posts/</loc>
+    <lastmod>2023-11-02T21:12:07+05:30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://vihanga-marasinghe.netlify.app/tags/programming/</loc>
+    <lastmod>2023-11-02T21:12:07+05:30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://vihanga-marasinghe.netlify.app/series/</loc>
+    <lastmod>2023-11-02T21:12:07+05:30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://vihanga-marasinghe.netlify.app/tags/</loc>
+    <lastmod>2023-11-02T21:12:07+05:30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://vihanga-marasinghe.netlify.app/hackathons/aces-coders-23/</loc>
+    <lastmod>2023-11-02T21:09:12+05:30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://vihanga-marasinghe.netlify.app/categories/</loc>
+    <lastmod>2023-11-02T21:09:12+05:30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://vihanga-marasinghe.netlify.app/categories/hackathons/</loc>
+    <lastmod>2023-11-02T21:09:12+05:30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://vihanga-marasinghe.netlify.app/graphics-log/cg-2/</loc>
     <lastmod>2023-11-01T14:22:42+05:30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -17,7 +87,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://vihanga-marasinghe.netlify.app/</loc>
+    <loc>https://vihanga-marasinghe.netlify.app/graphics-log/</loc>
     <lastmod>2023-11-01T14:22:42+05:30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -27,38 +97,38 @@
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://vihanga-marasinghe.netlify.app/posts/</loc>
-    <lastmod>2023-11-01T14:22:42+05:30</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://vihanga-marasinghe.netlify.app/series/</loc>
-    <lastmod>2023-11-01T14:22:42+05:30</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://vihanga-marasinghe.netlify.app/tags/</loc>
-    <lastmod>2023-11-01T14:22:42+05:30</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://vihanga-marasinghe.netlify.app/categories/</loc>
+    <loc>https://vihanga-marasinghe.netlify.app/graphics-log/cg-1/</loc>
     <lastmod>2023-11-01T14:22:30+05:30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://vihanga-marasinghe.netlify.app/categories/computer-graphics/</loc>
-    <lastmod>2023-11-01T14:22:30+05:30</lastmod>
+    <loc>https://vihanga-marasinghe.netlify.app/tags/gavel/</loc>
+    <lastmod>2023-10-01T00:00:00+05:30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://vihanga-marasinghe.netlify.app/posts/cg-1/</loc>
-    <lastmod>2023-11-01T14:22:30+05:30</lastmod>
+    <loc>https://vihanga-marasinghe.netlify.app/categories/gavel/</loc>
+    <lastmod>2023-10-01T00:00:00+05:30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://vihanga-marasinghe.netlify.app/categories/opengl/</loc>
-    <lastmod>2023-11-01T14:22:30+05:30</lastmod>
+    <loc>https://vihanga-marasinghe.netlify.app/volunteering/gavel-orientation-fos-23/</loc>
+    <lastmod>2023-10-01T00:00:00+05:30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://vihanga-marasinghe.netlify.app/volunteering/</loc>
+    <lastmod>2023-10-01T00:00:00+05:30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://vihanga-marasinghe.netlify.app/volunteering/gavel-agm-23/</loc>
+    <lastmod>2023-03-30T00:00:00+05:30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://vihanga-marasinghe.netlify.app/volunteering/we-lead-workshop-23/</loc>
+    <lastmod>2023-03-01T00:00:00+05:30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>

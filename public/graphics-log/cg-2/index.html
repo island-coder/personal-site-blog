@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="en-us"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+  
+
+
+
+
+
+
+  
+  
+  
+    
+    
+  
+
+
+
+
+
+  
+
+
+
+  
+  
+
+<link rel="stylesheet" href="https://vihanga-marasinghe.netlify.app/main.min.css" />
+
+
+  
+<meta name="robots" content="index, follow">
+    <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    <meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+  
+
+<title>Animated Clock using 2D Graphics</title>
+
+
+<meta name="author" content="Vihanga Marasinghe">
+
+<meta name="description" content="Personal blog and portfolio site of Vihanga Marasinghe.">
+<link rel="canonical" href="https://vihanga-marasinghe.netlify.app/graphics-log/cg-2/">
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Animated Clock using 2D Graphics">
+<meta property="og:description" content="Creating an Animated Clock Using OpenGL in C&#43;&#43;Link to this headingIntroductionLink to this headingLet&rsquo;s take a look at how we can code a simple animated clock in OpenGL.
+InitializationLink to this headingIn this clock program, we start by including the necessary libraries and setting up essential variables.
+c&#43;&#43; 1#include &lt;windows.h&gt; 2#include &lt;GL/glut.h&gt; 3#include &lt;math.h&gt; 4 5float PI = 3.14; 6 7int animationFactor = 0; 8int clockMinute=0; 9 10double minuteHandRotation=0; 11double hourHandRotation =0; 12 13 14void init() { 15 glClearColor(0.">
+<meta property="og:url" content="https://vihanga-marasinghe.netlify.app/graphics-log/cg-2/">
+<meta property="article:published_time" content="2023-11-01T14:22:42+05:30">
+  <meta property="article:modified_time" content="2023-11-01T14:22:42+05:30">
+  
+
+
+  <meta name="og:image" content="https://vihanga-marasinghe.netlify.app/images/default.png"/>
+
+
+
+
+
+  <meta property="og:see_also" content="https://vihanga-marasinghe.netlify.app/graphics-log/cg-1/" />
+  
+
+
+  <meta name="twitter:site" content="johndoestwitter">
+
+
+  <meta name="twitter:creator" content="johndoestwitter">
+
+<meta name="twitter:title" content="Animated Clock using 2D Graphics">
+<meta name="twitter:description" content="Creating an Animated Clock Using OpenGL in C&#43;&#43;Link to this headingIntroductionLink to this headingLet&rsquo;s take a look at how we can code a simple animated clock in OpenGL.
+InitializationLink to this headingIn this clock program, we start by including the necessary libraries and setting up essential variables.
+c&#43;&#43; 1#include &lt;windows.h&gt; 2#include &lt;GL/glut.h&gt; 3#include &lt;math.h&gt; 4 5float PI = 3.14; 6 7int animationFactor = 0; 8int clockMinute=0; 9 10double minuteHandRotation=0; 11double hourHandRotation =0; 12 13 14void init() { 15 glClearColor(0.">
+
+
+
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:image" content="https://vihanga-marasinghe.netlify.app/images/default.png"/>
+
+
+
+
+
+  
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "https://vihanga-marasinghe.netlify.app/#/schema/person/1",
+      "name": "John Doe",
+      "url": "https://vihanga-marasinghe.netlify.app/",
+      "image": {
+        "@type": "ImageObject",
+        "@id": "https://vihanga-marasinghe.netlify.app/#/schema/image/1",
+        "url": "https://vihanga-marasinghe.netlify.app/images/default.png",
+        "width": 453 ,
+        "height": 455 ,
+        "caption": "John Doe"
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://vihanga-marasinghe.netlify.app/#/schema/website/1",
+      "url": "https://vihanga-marasinghe.netlify.app/",
+      "name": "Vihanga Marasinghe",
+      "description": "Personal blog and portfolio site of Vihanga Marasinghe.",
+      "publisher": {
+        "@id": "https://vihanga-marasinghe.netlify.app/#/schema/person/1"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://vihanga-marasinghe.netlify.app/graphics-log/cg-2/",
+      "url": "https://vihanga-marasinghe.netlify.app/graphics-log/cg-2/",
+      "name": "Animated Clock using 2D Graphics",
+      "description": "Personal blog and portfolio site of Vihanga Marasinghe.",
+      "isPartOf": {
+        "@id": "https://vihanga-marasinghe.netlify.app/#/schema/website/1"
+      },
+      "about": {
+        "@id": "https://vihanga-marasinghe.netlify.app/#/schema/person/1"
+      },
+      "datePublished": "2023-11-01T14:22:42+05:30",
+      "dateModified": "2023-11-01T14:22:42+05:30",
+      "breadcrumb": {
+        "@id": "https://vihanga-marasinghe.netlify.app/graphics-log/cg-2/#/schema/breadcrumb/1"
+      },
+      "primaryImageOfPage": {
+        "@id": "https://vihanga-marasinghe.netlify.app/graphics-log/cg-2/#/schema/image/2"
+      },
+      "inLanguage": "en-US",
+      "potentialAction": [{
+        "@type": "ReadAction", "target": ["https://vihanga-marasinghe.netlify.app/graphics-log/cg-2/"]
+      }]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://vihanga-marasinghe.netlify.app/graphics-log/cg-2/#/schema/breadcrumb/1",
+      "name": "Breadcrumbs",
+      "itemListElement": [{
+        "@type": "ListItem",
+        "position":  1 ,
+        "item": {
+          "@type": "WebPage",
+          "@id": "https://vihanga-marasinghe.netlify.app/",
+          "url": "https://vihanga-marasinghe.netlify.app/",
+          "name": "Home"
+          }
+        },{
+        "@type": "ListItem",
+        "position":  2 ,
+        "item": {
+          "@type": "WebPage",
+          "@id": "https://vihanga-marasinghe.netlify.app/graphics-log/",
+          "url": "https://vihanga-marasinghe.netlify.app/graphics-log/",
+          "name": "Graphics Log"
+          }
+        },{
+        "@type": "ListItem",
+        "position":  3 ,
+        "item": {
+          "@id": "https://vihanga-marasinghe.netlify.app/graphics-log/cg-2/"
+          }
+        }]
+    },
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Article",
+          "@id": "https://vihanga-marasinghe.netlify.app/#/schema/article/1",
+          "headline": "Animated Clock using 2D Graphics",
+          "description": "",
+          "isPartOf": {
+            "@id": "https://vihanga-marasinghe.netlify.app/graphics-log/cg-2/"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://vihanga-marasinghe.netlify.app/graphics-log/cg-2/"
+          },
+          "datePublished": "2023-11-01T14:22:42+05:30",
+          "dateModified": "2023-11-01T14:22:42+05:30",
+          "author": {
+            "@id": "https://vihanga-marasinghe.netlify.app/#/schema/person/1"
+          },          
+          "publisher": {
+            "@id": "https://vihanga-marasinghe.netlify.app/#/schema/person/1"
+          },
+          "image": {
+            "@id": "https://vihanga-marasinghe.netlify.app/graphics-log/cg-2/#/schema/image/2"
+          }
+        }
+      ]
+    },{
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "ImageObject",
+          "@id": "https://vihanga-marasinghe.netlify.app/graphics-log/cg-2/#/schema/image/2",
+          "url": "https://vihanga-marasinghe.netlify.app/images/default.png",
+          "contentUrl": "https://vihanga-marasinghe.netlify.app/images/default.png",
+          "caption": "Animated Clock using 2D Graphics"
+        }
+      ]
+    }
+  ]
+}
+</script>
+  
+
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+
+  
+
+</head><body>
+    <header class="container">
+  <nav class="main-nav" id="js-navbar">
+    <a class="logo" href="https://vihanga-marasinghe.netlify.app/">Vihanga Marasinghe</a>
+    <ul class="menu" id="js-menu">
+      
+      
+      
+        <li class="menu-item">
+          <a href="/about/" class="menu-link">About Me</a>
+        </li>
+      
+      
+      
+        <li class="menu-item">
+          <a href="/projects/" class="menu-link">Projects</a>
+        </li>
+      
+      
+      
+        <li class="menu-item">
+          <a href="/posts/" class="menu-link">Blog</a>
+        </li>
+      
+      
+      
+      <li class="menu-item">
+        <span class="menu-link">Explore<span class="drop-icon">▾</span></span>
+        <ul class="sub-menu">
+          
+            <li class="menu-item">
+              <a href="/categories/" class="menu-link">Categories</a>                  
+            </li>
+          
+            <li class="menu-item">
+              <a href="/tags/" class="menu-link">Tags</a>                  
+            </li>
+          
+            <li class="menu-item">
+              <a href="/series/" class="menu-link">Series</a>                  
+            </li>
+          
+            <li class="menu-item">
+              <a href="/project-types/" class="menu-link">Project Types</a>                  
+            </li>
+          
+        </ul>
+      </li>
+      
+      
+      <li class="menu-item--align">
+        <div class="switch">
+          <input class="switch-input" type="checkbox" id="themeSwitch">
+          <label aria-hidden="true" class="switch-label" for="themeSwitch">On</label>
+          <div aria-hidden="true" class="switch-marker"></div>
+        </div>
+      </li>
+    </ul>
+    <span class="nav-toggle" id="js-navbar-toggle">
+      <svg xmlns="http://www.w3.org/2000/svg" id="Outline" viewBox="0 0 24 24" width="30" height="30" fill="var(--color-contrast-high)"><rect y="11" width="24" height="2" rx="1"/><rect y="4" width="24" height="2" rx="1"/><rect y="18" width="24" height="2" rx="1"/></svg>
+    </span>
+  </nav>
+</header><main class="section">
+<div class="container">
+  <section class="page-header">
+    <h1 class="page-header-title">Animated Clock using 2D Graphics</h1>
+    <div class="post-list-meta">
+      <div class="post-list-dates">Nov 1, 2023&nbsp;&middot;&nbsp;4 min.</div>
+      
+      
+    </div>
+    <p class="page-header-desc"></p>
+    <div class="single-terms">
+      
+      
+      <a class="term" href="https://vihanga-marasinghe.netlify.app/tags/computer-graphics/">Computer Graphics</a></li>
+      
+      <a class="term" href="https://vihanga-marasinghe.netlify.app/tags/opengl/">OpenGL</a></li>
+      
+      
+    </div>
+  </section>
+</div>
+<div class="single-container-post">
+  
+
+  <aside class="toc">
+    <div id="js-toc-toggle">
+      <h2 class="toc-header">Table of Contents</h2>
+      <span class="toc-drop-icon">&blacktriangledown;</span>
+    </div>
+    <div id="js-toc-contents" class="toc-contents"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#introduction">Introduction</a></li>
+    <li><a href="#initialization">Initialization</a></li>
+    <li><a href="#drawing-functions">Drawing Functions</a></li>
+    <li><a href="#reshaping-and-display-functions">Reshaping and Display Functions</a></li>
+    <li><a href="#animation">Animation</a></li>
+    <li><a href="#conclusion">Conclusion</a></li>
+  </ul>
+</nav></div>
+  </aside>
+
+  <div class="single-post-contents">
+      <div class="series">
+        <p>Part of the <a href="https://vihanga-marasinghe.netlify.app/series/graphics-log/">Graphics Log</a> series:</p>
+        
+        <ol class="series-list">
+            <li>
+                <a href="https://vihanga-marasinghe.netlify.app/graphics-log/cg-1/">Intro into Computer Graphics</a>
+              
+            </li>
+            <li>Animated Clock using 2D Graphics<span class="series-this-post">This post!</span>
+              
+            </li>
+        </ol>
+      </div>
+    
+    <div class="single-feature-img">
+
+
+
+  
+
+</div>
+    <article class="markdown">
+        <h1 id="creating-an-animated-clock-using-opengl-in-c">Creating an Animated Clock Using OpenGL in C++<a href="#creating-an-animated-clock-using-opengl-in-c">
+    <svg role="img" aria-labelledby="creating-an-animated-clock-using-opengl-in-c-IconTitle" fill="var(--color-primary)" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg">
+      <title id="creating-an-animated-clock-using-opengl-in-c-IconTitle">Link to this heading</title>
+      <path d="M0 0h24v24H0z" fill="none"></path>
+      <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"></path>
+    </svg>
+  </a>
+</h1><h2 id="introduction">Introduction<a href="#introduction">
+    <svg role="img" aria-labelledby="introduction-IconTitle" fill="var(--color-primary)" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg">
+      <title id="introduction-IconTitle">Link to this heading</title>
+      <path d="M0 0h24v24H0z" fill="none"></path>
+      <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"></path>
+    </svg>
+  </a>
+</h2><p>Let&rsquo;s take a look at how we can code a simple animated clock in OpenGL.</p>
+<h2 id="initialization">Initialization<a href="#initialization">
+    <svg role="img" aria-labelledby="initialization-IconTitle" fill="var(--color-primary)" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg">
+      <title id="initialization-IconTitle">Link to this heading</title>
+      <path d="M0 0h24v24H0z" fill="none"></path>
+      <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"></path>
+    </svg>
+  </a>
+</h2><p>In this clock program, we start by including the necessary libraries and setting up essential variables.</p>
+
+
+  <span class="code-language">c&#43;&#43;</span><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c++" data-lang="c++"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1</span><span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;windows.h&gt;</span><span style="color:#75715e">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2</span><span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;GL/glut.h&gt;</span><span style="color:#75715e">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3</span><span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;math.h&gt;</span><span style="color:#75715e">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4</span><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5</span><span><span style="color:#66d9ef">float</span> PI <span style="color:#f92672">=</span> <span style="color:#ae81ff">3.14</span>;
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6</span><span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7</span><span><span style="color:#66d9ef">int</span> animationFactor <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>;
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8</span><span><span style="color:#66d9ef">int</span> clockMinute<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>;
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9</span><span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10</span><span><span style="color:#66d9ef">double</span> minuteHandRotation<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>;
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11</span><span><span style="color:#66d9ef">double</span> hourHandRotation <span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>;
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12</span><span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13</span><span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14</span><span><span style="color:#66d9ef">void</span> <span style="color:#a6e22e">init</span>() {
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15</span><span>    glClearColor(<span style="color:#ae81ff">0.2</span>, <span style="color:#ae81ff">0.95</span>, <span style="color:#ae81ff">0.6</span>, <span style="color:#ae81ff">1.0</span>);
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16</span><span>    glClear(GL_COLOR_BUFFER_BIT); <span style="color:#75715e">//clearing color buffer
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17</span><span><span style="color:#75715e"></span>}</span></span></code></pre></div>
+<h2 id="drawing-functions">Drawing Functions<a href="#drawing-functions">
+    <svg role="img" aria-labelledby="drawing-functions-IconTitle" fill="var(--color-primary)" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg">
+      <title id="drawing-functions-IconTitle">Link to this heading</title>
+      <path d="M0 0h24v24H0z" fill="none"></path>
+      <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"></path>
+    </svg>
+  </a>
+</h2><p>Creating a visual representation of the clock involves several drawing functions. Let&rsquo;s briefly cover the main components:</p>
+<ul>
+<li><strong>Drawing the Clock Disk</strong>: This function is responsible for rendering the circular face of the clock.</li>
+</ul>
+
+
+  <span class="code-language">c&#43;&#43;</span><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c++" data-lang="c++"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1</span><span><span style="color:#66d9ef">void</span> <span style="color:#a6e22e">drawDisk</span>(<span style="color:#66d9ef">double</span> radius, <span style="color:#66d9ef">int</span> n) {
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2</span><span>    <span style="color:#66d9ef">double</span> angle <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>;
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3</span><span>    glPushMatrix();
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4</span><span>    glColor3f(<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">1</span>);
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5</span><span>    glBegin(GL_POLYGON);
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6</span><span>    <span style="color:#66d9ef">for</span> (<span style="color:#66d9ef">int</span> c <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>; c <span style="color:#f92672">&lt;=</span> n; c<span style="color:#f92672">++</span>) {
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7</span><span>        <span style="color:#66d9ef">double</span> x <span style="color:#f92672">=</span> radius <span style="color:#f92672">*</span> cos(angle);
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8</span><span>        <span style="color:#66d9ef">double</span> y <span style="color:#f92672">=</span> radius <span style="color:#f92672">*</span> sin(angle);
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9</span><span>        glVertex2d(x, y);
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10</span><span>        angle <span style="color:#f92672">=</span> angle <span style="color:#f92672">+</span> ((<span style="color:#ae81ff">2</span> <span style="color:#f92672">*</span> PI) <span style="color:#f92672">/</span> n);
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11</span><span>    }
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12</span><span>    glEnd();
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13</span><span>    glPopMatrix();
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14</span><span>}</span></span></code></pre></div>
+<ul>
+<li><strong>Drawing Clock Marks</strong>: To mark the hours, we draw lines that signify each hour on the clock face.</li>
+</ul>
+
+
+  <span class="code-language">c&#43;&#43;</span><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c++" data-lang="c++"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1</span><span><span style="color:#66d9ef">void</span> <span style="color:#a6e22e">drawMarks</span>(<span style="color:#66d9ef">double</span> radius){
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2</span><span>    glPushMatrix();
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3</span><span>    glColor3f(<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">0</span>);
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4</span><span>    glBegin(GL_LINES);
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5</span><span>    <span style="color:#66d9ef">double</span> angle<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>;
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6</span><span>    <span style="color:#66d9ef">for</span> (<span style="color:#66d9ef">int</span> c <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>; c <span style="color:#f92672">&lt;=</span> <span style="color:#ae81ff">12</span>; c<span style="color:#f92672">++</span>) {
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7</span><span>        <span style="color:#66d9ef">double</span> x <span style="color:#f92672">=</span> radius <span style="color:#f92672">*</span> cos(angle);
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8</span><span>        <span style="color:#66d9ef">double</span> y <span style="color:#f92672">=</span> radius <span style="color:#f92672">*</span> sin(angle);
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9</span><span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10</span><span>        glVertex2d(<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">0</span>);
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11</span><span>        glVertex2d(x, y);
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12</span><span>        angle <span style="color:#f92672">=</span> angle <span style="color:#f92672">+</span> ((<span style="color:#ae81ff">2</span> <span style="color:#f92672">*</span> PI) <span style="color:#f92672">/</span> <span style="color:#ae81ff">12</span>);
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13</span><span>    }
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14</span><span>    glEnd();
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15</span><span>    glPopMatrix();
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16</span><span>}</span></span></code></pre></div>
+<ul>
+<li><strong>Drawing the Hour Hand</strong>: The hour hand is drawn and rotated according to the current time, moving every five minutes.</li>
+</ul>
+
+
+  <span class="code-language">c&#43;&#43;</span><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c++" data-lang="c++"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1</span><span><span style="color:#66d9ef">void</span> <span style="color:#a6e22e">drawHourHand</span>(<span style="color:#66d9ef">double</span> radius){
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2</span><span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3</span><span>    <span style="color:#66d9ef">if</span>(clockMinute<span style="color:#f92672">==</span><span style="color:#ae81ff">5</span>){
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4</span><span>        hourHandRotation<span style="color:#f92672">+=</span> (<span style="color:#ae81ff">360</span> <span style="color:#f92672">/</span>  <span style="color:#ae81ff">12</span>);
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5</span><span>        clockMinute<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>;
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6</span><span>    }
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7</span><span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8</span><span>    glPushMatrix();
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9</span><span>    glColor3f(<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">0</span>);
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10</span><span>    glRotated(<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span><span style="color:#f92672">*</span>hourHandRotation,<span style="color:#ae81ff">0</span>,<span style="color:#ae81ff">0</span>,<span style="color:#ae81ff">1</span>);
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11</span><span>    glBegin(GL_POLYGON);
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12</span><span>    glVertex2d(<span style="color:#ae81ff">0</span>, radius);
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13</span><span>    glVertex2d(radius<span style="color:#f92672">*</span><span style="color:#ae81ff">0.1</span>, <span style="color:#ae81ff">0</span>);
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14</span><span>    glVertex2d(<span style="color:#f92672">-</span>radius<span style="color:#f92672">*</span><span style="color:#ae81ff">0.1</span>, <span style="color:#ae81ff">0</span>);
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15</span><span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16</span><span>    glEnd();
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17</span><span>    glPopMatrix();
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18</span><span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19</span><span>}</span></span></code></pre></div>
+<ul>
+<li><strong>Drawing the Minute Hand</strong>: Similarly, the minute hand is drawn and rotated, advancing every minute.</li>
+</ul>
+
+
+  <span class="code-language">c&#43;&#43;</span><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c++" data-lang="c++"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1</span><span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2</span><span><span style="color:#66d9ef">void</span> <span style="color:#a6e22e">drawMinuteHand</span>(<span style="color:#66d9ef">double</span> radius){
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3</span><span>    glPushMatrix();
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4</span><span>    glColor3f(<span style="color:#ae81ff">0.8</span>, <span style="color:#ae81ff">0.5</span>, <span style="color:#ae81ff">0</span>);
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5</span><span>    glRotated(<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span><span style="color:#f92672">*</span>minuteHandRotation,<span style="color:#ae81ff">0</span>,<span style="color:#ae81ff">0</span>,<span style="color:#ae81ff">1</span>);
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6</span><span>    glBegin(GL_POLYGON);
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7</span><span>    glVertex2d(<span style="color:#ae81ff">0</span>, radius<span style="color:#f92672">*</span><span style="color:#ae81ff">0.5</span>);
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8</span><span>    glVertex2d(radius<span style="color:#f92672">*</span><span style="color:#ae81ff">0.05</span>, <span style="color:#ae81ff">0</span>);
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9</span><span>    glVertex2d(<span style="color:#f92672">-</span>radius<span style="color:#f92672">*</span><span style="color:#ae81ff">0.05</span>, <span style="color:#ae81ff">0</span>);
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10</span><span>    glEnd();
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11</span><span>    glPopMatrix();
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12</span><span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13</span><span>    minuteHandRotation <span style="color:#f92672">+=</span> (<span style="color:#ae81ff">360</span> <span style="color:#f92672">/</span>  <span style="color:#ae81ff">60</span>);
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14</span><span>}</span></span></code></pre></div>
+<ul>
+<li><strong>Drawing the Complete Clock</strong>: The final clock is assembled by combining the disk, marks, hour hand, and minute hand.</li>
+</ul>
+
+
+  <span class="code-language">c&#43;&#43;</span><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c++" data-lang="c++"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span><span style="color:#66d9ef">void</span> <span style="color:#a6e22e">drawClock</span>(<span style="color:#66d9ef">int</span> radius){
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span>    drawDisk(radius,<span style="color:#ae81ff">32</span>);
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3</span><span>    drawMarks(radius);
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4</span><span>    drawHourHand(radius);
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5</span><span>    drawMinuteHand(radius);
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6</span><span>}</span></span></code></pre></div>
+<h2 id="reshaping-and-display-functions">Reshaping and Display Functions<a href="#reshaping-and-display-functions">
+    <svg role="img" aria-labelledby="reshaping-and-display-functions-IconTitle" fill="var(--color-primary)" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg">
+      <title id="reshaping-and-display-functions-IconTitle">Link to this heading</title>
+      <path d="M0 0h24v24H0z" fill="none"></path>
+      <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"></path>
+    </svg>
+  </a>
+</h2><p>These important utility functions handle the window resizing and actual rendering of the clock. The reshaping function ensures that the clock maintains its aspect ratio, while the display function takes care of rendering the clock and axes.</p>
+
+
+  <span class="code-language">c&#43;&#43;</span><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c++" data-lang="c++"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1</span><span><span style="color:#66d9ef">void</span> <span style="color:#a6e22e">reshape</span>(GLsizei w, GLsizei h) {
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2</span><span>    glViewport(<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">0</span>, w, h);
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3</span><span>    <span style="color:#75715e">//calculate aspect ratio
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4</span><span><span style="color:#75715e"></span>    <span style="color:#66d9ef">if</span> (h <span style="color:#f92672">==</span> <span style="color:#ae81ff">0</span>)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5</span><span>        h <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>;
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6</span><span>    GLfloat aspect <span style="color:#f92672">=</span> (GLfloat)w <span style="color:#f92672">/</span> (GLfloat)h;
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7</span><span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8</span><span>    glMatrixMode(GL_PROJECTION);
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9</span><span>    glLoadIdentity();
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10</span><span>    <span style="color:#66d9ef">if</span> (w <span style="color:#f92672">&gt;=</span> h)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11</span><span>        gluOrtho2D(<span style="color:#f92672">-</span><span style="color:#ae81ff">10</span> <span style="color:#f92672">*</span> aspect, <span style="color:#ae81ff">10</span> <span style="color:#f92672">*</span> aspect, <span style="color:#f92672">-</span><span style="color:#ae81ff">10</span>, <span style="color:#ae81ff">10</span>);
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12</span><span>    <span style="color:#66d9ef">else</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13</span><span>        gluOrtho2D(<span style="color:#f92672">-</span><span style="color:#ae81ff">10</span>, <span style="color:#ae81ff">10</span>, <span style="color:#f92672">-</span><span style="color:#ae81ff">10</span> <span style="color:#f92672">/</span> aspect, <span style="color:#ae81ff">10</span> <span style="color:#f92672">/</span> aspect);
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14</span><span>}
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15</span><span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16</span><span><span style="color:#66d9ef">void</span> <span style="color:#a6e22e">display</span>() {
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17</span><span>    glClear(GL_COLOR_BUFFER_BIT); <span style="color:#75715e">// to avoid tracing 
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18</span><span><span style="color:#75715e"></span>    glLineWidth(<span style="color:#ae81ff">2.0</span>); <span style="color:#75715e">//Setting the line width
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19</span><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20</span><span>    <span style="color:#75715e">//y-axis
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">21</span><span><span style="color:#75715e"></span>    glColor3f(<span style="color:#ae81ff">1.0</span>, <span style="color:#ae81ff">0.0</span>, <span style="color:#ae81ff">0.0</span>);
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">22</span><span>    glBegin(GL_LINES);
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">23</span><span>    glVertex2f(<span style="color:#ae81ff">0.0</span>, <span style="color:#ae81ff">100.0</span>);
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">24</span><span>    glVertex2f(<span style="color:#ae81ff">0.0</span>, <span style="color:#f92672">-</span><span style="color:#ae81ff">100.0</span>);
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">25</span><span>    glEnd();
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">26</span><span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">27</span><span>    <span style="color:#75715e">//x-axis
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">28</span><span><span style="color:#75715e"></span>    glColor3f(<span style="color:#ae81ff">1.0</span>, <span style="color:#ae81ff">0.0</span>, <span style="color:#ae81ff">0.0</span>);
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">29</span><span>    glBegin(GL_LINES);
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">30</span><span>    glVertex2f(<span style="color:#ae81ff">100.0</span>, <span style="color:#ae81ff">0.0</span>);
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">31</span><span>    glVertex2f(<span style="color:#f92672">-</span><span style="color:#ae81ff">100.0</span>, <span style="color:#ae81ff">0.0</span>);
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">32</span><span>    glEnd();
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">33</span><span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">34</span><span>    drawClock();
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">35</span><span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">36</span><span>    glutSwapBuffers(); <span style="color:#75715e">//swapping the buffers
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">37</span><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">38</span><span>}</span></span></code></pre></div>
+<h2 id="animation">Animation<a href="#animation">
+    <svg role="img" aria-labelledby="animation-IconTitle" fill="var(--color-primary)" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg">
+      <title id="animation-IconTitle">Link to this heading</title>
+      <path d="M0 0h24v24H0z" fill="none"></path>
+      <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"></path>
+    </svg>
+  </a>
+</h2><p>The animation function is a crucial part of this project. It updates the clock&rsquo;s minute and hour hands in real-time, creating the illusion of a working clock.</p>
+<h2 id="conclusion">Conclusion<a href="#conclusion">
+    <svg role="img" aria-labelledby="conclusion-IconTitle" fill="var(--color-primary)" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg">
+      <title id="conclusion-IconTitle">Link to this heading</title>
+      <path d="M0 0h24v24H0z" fill="none"></path>
+      <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"></path>
+    </svg>
+  </a>
+</h2><p>Creating an animated clock using OpenGL in C++ is not only a fun project but also a great way to explore the principles of computer graphics and animation.</p>
+
+    </article>
+    <aside>
+      <div class="single-terms">
+        
+          
+          <a class="term" href="https://vihanga-marasinghe.netlify.app/tags/computer-graphics/">Computer Graphics</a></li>
+          
+          <a class="term" href="https://vihanga-marasinghe.netlify.app/tags/opengl/">OpenGL</a></li>
+          
+        
+      </div>
+      
+  
+  
+  
+
+  <section>
+    <h2>Share</h2>
+    <div class="social-links">
+      <ul class="social-icons--share">
+        
+        
+        <a href="https://twitter.com/intent/tweet?url=https%3a%2f%2fvihanga-marasinghe.netlify.app%2fgraphics-log%2fcg-2%2f&amp;text=Animated%20Clock%20using%202D%20Graphics" target="_blank" rel="noopener" aria-label="Share on Twitter" class="social-btn twitter">
+          <li><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-twitter" width="24" height="24" viewBox="0 0 384 312" fill="var(--color-primary)"><path d="m384 36.9c-14.1 6.3-29.3 10.5-45.2 12.4 16.3-9.7 28.8-25.2 34.6-43.6-15.2 9-32.1 15.6-50 19.1-14.4-15.2-34.9-24.8-57.5-24.8-43.5 0-78.8 35.3-78.8 78.8 0 6.2.7 12.2 2 17.9-65.5-3.3-123.5-34.6-162.4-82.3-6.7 11.6-10.6 25.2-10.6 39.6 0 27.3 13.9 51.4 35 65.6-12.9-.4-25.1-4-35.7-9.9v1c0 38.2 27.2 70 63.2 77.2-6.6 1.8-13.6 2.8-20.8 2.8-5.1 0-10-.5-14.8-1.4 10 31.3 39.1 54.1 73.6 54.7-27 21.1-60.9 33.7-97.8 33.7-6.4 0-12.6-.4-18.8-1.1 34.9 22.4 76.3 35.4 120.8 35.4 144.9 0 224.1-120 224.1-224.1 0-3.4-.1-6.8-.2-10.2 15.4-11.1 28.7-25 39.3-40.8z"/></svg></li>
+        </a>
+        
+        
+        
+        <a href="https://www.reddit.com/submit?url=https%3a%2f%2fvihanga-marasinghe.netlify.app%2fgraphics-log%2fcg-2%2f" target="_blank" rel="noopener" aria-label="Share on Reddit" class="social-btn reddit">
+          <li><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-reddit" width="24" height="24" viewBox="0 0 24 24" fill="var(--color-primary)"><path d="M24 11.779c0-1.459-1.192-2.645-2.657-2.645-.715 0-1.363.286-1.84.746-1.81-1.191-4.259-1.949-6.971-2.046l1.483-4.669 4.016.941-.006.058c0 1.193.975 2.163 2.174 2.163 1.198 0 2.172-.97 2.172-2.163s-.975-2.164-2.172-2.164c-.92 0-1.704.574-2.021 1.379l-4.329-1.015c-.189-.046-.381.063-.44.249l-1.654 5.207c-2.838.034-5.409.798-7.3 2.025-.474-.438-1.103-.712-1.799-.712-1.465 0-2.656 1.187-2.656 2.646 0 .97.533 1.811 1.317 2.271-.052.282-.086.567-.086.857 0 3.911 4.808 7.093 10.719 7.093s10.72-3.182 10.72-7.093c0-.274-.029-.544-.075-.81.832-.447 1.405-1.312 1.405-2.318zm-17.224 1.816c0-.868.71-1.575 1.582-1.575.872 0 1.581.707 1.581 1.575s-.709 1.574-1.581 1.574-1.582-.706-1.582-1.574zm9.061 4.669c-.797.793-2.048 1.179-3.824 1.179l-.013-.003-.013.003c-1.777 0-3.028-.386-3.824-1.179-.145-.144-.145-.379 0-.523.145-.145.381-.145.526 0 .65.647 1.729.961 3.298.961l.013.003.013-.003c1.569 0 2.648-.315 3.298-.962.145-.145.381-.144.526 0 .145.145.145.379 0 .524zm-.189-3.095c-.872 0-1.581-.706-1.581-1.574 0-.868.709-1.575 1.581-1.575s1.581.707 1.581 1.575-.709 1.574-1.581 1.574z"/></svg></li>
+        </a>
+        
+        
+                
+        <a href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fvihanga-marasinghe.netlify.app%2fgraphics-log%2fcg-2%2f" target="_blank" rel="noopener" aria-label="Share on Facebook" class="social-btn facebook">
+          <li><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-facebook" width="24" height="24" viewBox="0 0 352 352" fill="var(--color-primary)"><path d="m0 32v288c0 17.5 14.5 32 32 32h288c17.5 0 32-14.5 32-32v-288c0-17.5-14.5-32-32-32h-288c-17.5 0-32 14.5-32 32zm320 0v288h-83v-108h41.5l6-48h-47.5v-31c0-14 3.5-23.5 23.5-23.5h26v-43.5c-4.4-.6-19.8-1.5-37.5-1.5-36.9 0-62 22.2-62 63.5v36h-42v48h42v108h-155v-288z"/></svg></li>
+        </a>
+        
+        
+        
+        <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fvihanga-marasinghe.netlify.app%2fgraphics-log%2fcg-2%2f&amp;source=https%3a%2f%2fvihanga-marasinghe.netlify.app%2fgraphics-log%2fcg-2%2f&amp;title=Animated%20Clock%20using%202D%20Graphics&amp;summary=Animated%20Clock%20using%202D%20Graphics" target="_blank" rel="noopener" aria-label="Share on LinkedIn" class="social-btn linkedin">
+          <li><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-linkedin" width="24" height="24" viewBox="0 0 352 352" fill="var(--color-primary)"><path d="M0,40v272c0,21.9,18.1,40,40,40h272c21.9,0,40-18.1,40-40V40c0-21.9-18.1-40-40-40H40C18.1,0,0,18.1,0,40z M312,32 c4.6,0,8,3.4,8,8v272c0,4.6-3.4,8-8,8H40c-4.6,0-8-3.4-8-8V40c0-4.6,3.4-8,8-8H312z M59.5,87c0,15.2,12.3,27.5,27.5,27.5 c15.2,0,27.5-12.3,27.5-27.5c0-15.2-12.3-27.5-27.5-27.5C71.8,59.5,59.5,71.8,59.5,87z M187,157h-1v-21h-45v152h47v-75 c0-19.8,3.9-39,28.5-39c24.2,0,24.5,22.4,24.5,40v74h47v-83.5c0-40.9-8.7-72-56.5-72C208.5,132.5,193.3,145.1,187,157z M64,288h47.5 V136H64V288z"/></svg></li>
+        </a>
+        
+        
+        
+        <a href="mailto:?subject=Vihanga%20Marasinghe%20-%20Animated%20Clock%20using%202D%20Graphics.&amp;body=Animated%20Clock%20using%202D%20Graphics%2c%20by%20Vihanga%20Marasinghe%0a%0a%0ahttps%3a%2f%2fvihanga-marasinghe.netlify.app%2fgraphics-log%2fcg-2%2f%0a" target="_blank" class="social-btn email">
+          <li><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-mail" width="24" height="24" viewBox="0 0 416 288" fill="var(--color-primary)"><path d="m0 16v256 16h16 384 16v-16-256-16h-16-384-16zm347 16-139 92.5-139-92.5zm-148 125.5 9 5.5 9-5.5 167-111.5v210h-352v-210z"/></svg></li>
+        </a>
+      </ul>
+    </div>
+  </section>
+  
+        <div class="series">
+          <p>Part of the <a href="https://vihanga-marasinghe.netlify.app/series/graphics-log/">Graphics Log</a> series:</p>
+          
+          <ol>
+              <li>
+                  <a href="https://vihanga-marasinghe.netlify.app/graphics-log/cg-1/">Intro into Computer Graphics</a>
+                
+              </li>
+              <li>Animated Clock using 2D Graphics<span class="series-this-post">This post!</span>
+                
+              </li>
+          </ol>
+        </div>
+      
+      
+    </aside>
+  </div>
+</div>
+
+    </main><footer>
+  
+  <div class="section footer">
+    <p class="footer-copyright">&copy; 2023 &middot; 
+      <a href="https://vihanga-marasinghe.netlify.app/">Vihanga Marasinghe</a>
+      
+    </p>
+    
+      <div class="footer-socials">
+        
+<div class="social-links">
+  <ul class="social-icons">
+    
+    
+
+    
+    
+
+    
+    
+    <li>
+      <a href="https://github.com/island-coder" target="_blank" rel="noopener" aria-label="Visit Github profile" class="social-btn github">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-github" width="24" height="24" viewBox="0 0 24 24" fill="var(--color-primary)"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+      </a>
+    </li>
+    
+
+    
+    
+
+    
+    
+    <li>
+      <a href="https://www.linkedin.com/in/vihangamara" target="_blank" rel="noopener" aria-label="Visit LinkedIn profile" class="social-btn linkedin">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-linkedin" width="24" height="24" viewBox="0 0 352 352" fill="var(--color-primary)"><path d="M0,40v272c0,21.9,18.1,40,40,40h272c21.9,0,40-18.1,40-40V40c0-21.9-18.1-40-40-40H40C18.1,0,0,18.1,0,40z M312,32 c4.6,0,8,3.4,8,8v272c0,4.6-3.4,8-8,8H40c-4.6,0-8-3.4-8-8V40c0-4.6,3.4-8,8-8H312z M59.5,87c0,15.2,12.3,27.5,27.5,27.5 c15.2,0,27.5-12.3,27.5-27.5c0-15.2-12.3-27.5-27.5-27.5C71.8,59.5,59.5,71.8,59.5,87z M187,157h-1v-21h-45v152h47v-75 c0-19.8,3.9-39,28.5-39c24.2,0,24.5,22.4,24.5,40v74h47v-83.5c0-40.9-8.7-72-56.5-72C208.5,132.5,193.3,145.1,187,157z M64,288h47.5 V136H64V288z"/></svg>
+        </a>
+    </li>
+    
+
+    
+    
+    <li>
+      <a href="mailto:?to=vihangamara%40gmail.com" target="_blank" class="social-btn email">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-mail" width="24" height="24" viewBox="0 0 416 288" fill="var(--color-primary)"><path d="m0 16v256 16h16 384 16v-16-256-16h-16-384-16zm347 16-139 92.5-139-92.5zm-148 125.5 9 5.5 9-5.5 167-111.5v210h-352v-210z"/></svg>
+      </a>
+    </li>
+    
+    <li>
+      <a href="https://gitlab.com/island-coder" target="_blank" rel="noopener" aria-label="Visit GitLab profile" class="social-btn github">       
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-github" width="24" height="24" viewBox="0 0 352 352" fill="var(--color-primary)">
+<path xmlns="http://www.w3.org/2000/svg" class="cls-1" d="M282.83,170.73l-.27-.69-26.14-68.22a6.81,6.81,0,0,0-2.69-3.24,7,7,0,0,0-8,.43,7,7,0,0,0-2.32,3.52l-17.65,54H154.29l-17.65-54A6.86,6.86,0,0,0,134.32,99a7,7,0,0,0-8-.43,6.87,6.87,0,0,0-2.69,3.24L97.44,170l-.26.69a48.54,48.54,0,0,0,16.1,56.1l.09.07.24.17,39.82,29.82,19.7,14.91,12,9.06a8.07,8.07,0,0,0,9.76,0l12-9.06,19.7-14.91,40.06-30,.1-.08A48.56,48.56,0,0,0,282.83,170.73Z"/>
+</svg>
+      </a>
+    </li>
+  </ul>
+</div>
+
+      </div>
+    
+  </div>
+</footer>
+
+  
+
+
+
+
+
+  
+  
+  
+    
+    
+  
+
+
+
+
+  
+  
+    
+
+<script src="https://vihanga-marasinghe.netlify.app/main.min.js"></script>
+
+
+
+  
+</body>
+</html>
