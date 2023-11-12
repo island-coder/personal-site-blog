@@ -15,4 +15,5 @@
 }
 
 .single-feature-img{
+    filter: grayscale(0%);
 }
