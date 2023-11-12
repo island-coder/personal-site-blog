@@ -17,3 +17,7 @@
 .single-feature-img{
     filter: grayscale(0%);
 }
+
+.single-post-image{
+    filter: grayscale(0%);
+}
