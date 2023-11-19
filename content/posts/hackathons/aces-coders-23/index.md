@@ -12,7 +12,7 @@ lastmod:
 expiryDate: 
 publishDate: 
 
-feature_image: aces-coders.jpg
+feature_image:
 feature_image_alt: 
 
 categories:
@@ -31,3 +31,4 @@ newsletter: false
 disable_comments: false
 ---
 
+![ACES Coders](aces-coders.jpg)

@@ -10,14 +10,18 @@
 
 
 }
-[data-theme="dark"] {
+/* [data-theme="dark"] {
     --color-primary: rgb(103, 170, 249);
-}
+} */
 
-/* .single-feature-img img{
+.img{
+    filter: grayscale(0%);
+
+}
+.single-feature-img{
     filter: grayscale(0%);
 }
 
 .single-post-image{
     filter: grayscale(0%);
-} */
+}

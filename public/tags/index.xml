@@ -6,7 +6,16 @@
     <description>Recent content in Tags on Vihanga Marasinghe</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 02 Nov 2023 21:12:07 +0530</lastBuildDate><atom:link href="https://vihanga-marasinghe.netlify.app/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 14 Nov 2023 00:00:00 +0530</lastBuildDate><atom:link href="https://vihanga-marasinghe.netlify.app/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Creating an Animated Barber Pole with OpenGL</title>
+      <link>https://vihanga-marasinghe.netlify.app/graphics-log/barber-pole/</link>
+      <pubDate>Tue, 14 Nov 2023 00:00:00 +0530</pubDate>
+      
+      <guid>https://vihanga-marasinghe.netlify.app/graphics-log/barber-pole/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>ACES Hackathon 23</title>
       <link>https://vihanga-marasinghe.netlify.app/hackathons/aces-hackathon-23/</link>

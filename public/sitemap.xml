@@ -2,6 +2,51 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://vihanga-marasinghe.netlify.app/tags/computer-graphics/</loc>
+    <lastmod>2023-11-14T00:00:00+05:30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://vihanga-marasinghe.netlify.app/graphics-log/barber-pole/</loc>
+    <lastmod>2023-11-14T00:00:00+05:30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://vihanga-marasinghe.netlify.app/series/graphics-log/</loc>
+    <lastmod>2023-11-14T00:00:00+05:30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://vihanga-marasinghe.netlify.app/graphics-log/</loc>
+    <lastmod>2023-11-14T00:00:00+05:30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://vihanga-marasinghe.netlify.app/</loc>
+    <lastmod>2023-11-14T00:00:00+05:30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://vihanga-marasinghe.netlify.app/tags/opengl/</loc>
+    <lastmod>2023-11-14T00:00:00+05:30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://vihanga-marasinghe.netlify.app/posts/</loc>
+    <lastmod>2023-11-14T00:00:00+05:30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://vihanga-marasinghe.netlify.app/series/</loc>
+    <lastmod>2023-11-14T00:00:00+05:30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://vihanga-marasinghe.netlify.app/tags/</loc>
+    <lastmod>2023-11-14T00:00:00+05:30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>https://vihanga-marasinghe.netlify.app/hackathons/aces-hackathon-23/</loc>
     <lastmod>2023-11-02T21:12:07+05:30</lastmod>
     <changefreq>monthly</changefreq>
@@ -32,27 +77,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://vihanga-marasinghe.netlify.app/</loc>
-    <lastmod>2023-11-02T21:12:07+05:30</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://vihanga-marasinghe.netlify.app/posts/</loc>
-    <lastmod>2023-11-02T21:12:07+05:30</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>https://vihanga-marasinghe.netlify.app/tags/programming/</loc>
-    <lastmod>2023-11-02T21:12:07+05:30</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://vihanga-marasinghe.netlify.app/series/</loc>
-    <lastmod>2023-11-02T21:12:07+05:30</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://vihanga-marasinghe.netlify.app/tags/</loc>
     <lastmod>2023-11-02T21:12:07+05:30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -73,26 +98,6 @@
     <priority>0.5</priority>
   </url><url>
     <loc>https://vihanga-marasinghe.netlify.app/graphics-log/cg-2/</loc>
-    <lastmod>2023-11-01T14:22:42+05:30</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://vihanga-marasinghe.netlify.app/tags/computer-graphics/</loc>
-    <lastmod>2023-11-01T14:22:42+05:30</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://vihanga-marasinghe.netlify.app/series/graphics-log/</loc>
-    <lastmod>2023-11-01T14:22:42+05:30</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://vihanga-marasinghe.netlify.app/graphics-log/</loc>
-    <lastmod>2023-11-01T14:22:42+05:30</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://vihanga-marasinghe.netlify.app/tags/opengl/</loc>
     <lastmod>2023-11-01T14:22:42+05:30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
