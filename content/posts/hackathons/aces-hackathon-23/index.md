@@ -12,10 +12,11 @@ lastmod:
 expiryDate: 
 publishDate: 
 
-feature_image: aces-hackathon.jpeg
+feature_image: 
 feature_image_alt: 
 
 categories:
+- Hackathons
 tags:
 - Hackathons
 - Coding
@@ -30,4 +31,8 @@ social_share: true
 newsletter: false
 disable_comments: false
 ---
+
+![ACES HACAKTHON](aces-hackathon.jpeg)
+
 Our team mangaged to become runners up for developing and presenting an IOT/Edge device that can help prevent and detect traffic accidents.
+

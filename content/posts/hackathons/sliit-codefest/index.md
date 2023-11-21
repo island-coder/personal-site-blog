@@ -16,8 +16,13 @@ feature_image:
 feature_image_alt: 
 
 categories:
+- Hackathons
 tags:
+- Hackathons
+- Coding
+- Programming
 series:
+- Hackathons
 
 toc: true
 related: true
