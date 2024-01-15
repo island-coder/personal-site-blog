@@ -17,8 +17,10 @@ feature_image_alt:
 
 categories:
 - Gavel
+- Volunteering
 tags: 
 - Gavel
+- Volunteering
 series:
 
 toc: true

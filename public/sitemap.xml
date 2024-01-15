@@ -3,46 +3,56 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://vihanga-marasinghe.netlify.app/tags/computer-graphics/</loc>
-    <lastmod>2023-11-14T00:00:00+05:30</lastmod>
+    <lastmod>2024-01-15T08:57:20+05:30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://vihanga-marasinghe.netlify.app/graphics-log/barber-pole/</loc>
-    <lastmod>2023-11-14T00:00:00+05:30</lastmod>
+    <loc>https://vihanga-marasinghe.netlify.app/graphics-log/resource-guides/</loc>
+    <lastmod>2024-01-15T08:57:20+05:30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://vihanga-marasinghe.netlify.app/series/graphics-log/</loc>
-    <lastmod>2023-11-14T00:00:00+05:30</lastmod>
+    <lastmod>2024-01-15T08:57:20+05:30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://vihanga-marasinghe.netlify.app/graphics-log/</loc>
-    <lastmod>2023-11-14T00:00:00+05:30</lastmod>
+    <lastmod>2024-01-15T08:57:20+05:30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://vihanga-marasinghe.netlify.app/</loc>
-    <lastmod>2023-11-14T00:00:00+05:30</lastmod>
+    <lastmod>2024-01-15T08:57:20+05:30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://vihanga-marasinghe.netlify.app/tags/opengl/</loc>
-    <lastmod>2023-11-14T00:00:00+05:30</lastmod>
+    <lastmod>2024-01-15T08:57:20+05:30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://vihanga-marasinghe.netlify.app/posts/</loc>
-    <lastmod>2023-11-14T00:00:00+05:30</lastmod>
+    <lastmod>2024-01-15T08:57:20+05:30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://vihanga-marasinghe.netlify.app/series/</loc>
-    <lastmod>2023-11-14T00:00:00+05:30</lastmod>
+    <lastmod>2024-01-15T08:57:20+05:30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://vihanga-marasinghe.netlify.app/tags/</loc>
+    <lastmod>2024-01-15T08:57:20+05:30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://vihanga-marasinghe.netlify.app/graphics-log/pyramids-with-lighting/</loc>
+    <lastmod>2023-12-31T09:30:55+05:30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://vihanga-marasinghe.netlify.app/graphics-log/barber-pole/</loc>
     <lastmod>2023-11-14T00:00:00+05:30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -122,8 +132,28 @@
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
+    <loc>https://vihanga-marasinghe.netlify.app/tags/volunteering/</loc>
+    <lastmod>2023-10-01T00:00:00+05:30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://vihanga-marasinghe.netlify.app/categories/volunteering/</loc>
+    <lastmod>2023-10-01T00:00:00+05:30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>https://vihanga-marasinghe.netlify.app/volunteering/</loc>
     <lastmod>2023-10-01T00:00:00+05:30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://vihanga-marasinghe.netlify.app/volunteering/hackathon-awareness-23/</loc>
+    <lastmod>2023-06-01T09:52:19+05:30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://vihanga-marasinghe.netlify.app/tags/peradeniya/</loc>
+    <lastmod>2023-06-01T09:52:19+05:30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -154,6 +184,16 @@
   </url><url>
     <loc>https://vihanga-marasinghe.netlify.app/projects/</loc>
     <lastmod>2023-02-20T03:52:30-05:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://vihanga-marasinghe.netlify.app/volunteering/msup-polonnaruwa/</loc>
+    <lastmod>2022-12-01T09:26:38+05:30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://vihanga-marasinghe.netlify.app/series/volunteering/</loc>
+    <lastmod>2022-12-01T09:26:38+05:30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
