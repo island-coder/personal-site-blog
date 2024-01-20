@@ -16,10 +16,10 @@ feature_image:
 feature_image_alt: 
 
 categories:
+- Volunteering
 tags:
 - Volunteering
 series:
-- Volunteering
 
 toc: true
 related: true
