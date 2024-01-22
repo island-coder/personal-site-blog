@@ -16,6 +16,15 @@
     </item>
     
     <item>
+      <title>Practical tips for efficient development with OpenGL</title>
+      <link>https://vihanga-marasinghe.netlify.app/graphics-log/opengl-tips/</link>
+      <pubDate>Wed, 03 Jan 2024 12:39:33 +0530</pubDate>
+      
+      <guid>https://vihanga-marasinghe.netlify.app/graphics-log/opengl-tips/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Lighting in Computer Graphics : A Practical Guide with OpenGL</title>
       <link>https://vihanga-marasinghe.netlify.app/graphics-log/pyramids-with-lighting/</link>
       <pubDate>Sun, 31 Dec 2023 09:30:55 +0530</pubDate>
@@ -34,6 +43,15 @@
     </item>
     
     <item>
+      <title>Understanding Subdivision Surfaces in Computer Graphics</title>
+      <link>https://vihanga-marasinghe.netlify.app/graphics-log/subdivision-surfaces/</link>
+      <pubDate>Fri, 01 Dec 2023 19:20:21 +0530</pubDate>
+      
+      <guid>https://vihanga-marasinghe.netlify.app/graphics-log/subdivision-surfaces/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Creating a flag using Bezier Curves</title>
       <link>https://vihanga-marasinghe.netlify.app/graphics-log/bezier-flag/</link>
       <pubDate>Fri, 01 Dec 2023 16:11:54 +0530</pubDate>
@@ -43,11 +61,11 @@
     </item>
     
     <item>
-      <title>Creating an Animated Barber Pole with OpenGL</title>
-      <link>https://vihanga-marasinghe.netlify.app/graphics-log/barber-pole/</link>
-      <pubDate>Tue, 14 Nov 2023 00:00:00 +0530</pubDate>
+      <title>Basic Texturing</title>
+      <link>https://vihanga-marasinghe.netlify.app/graphics-log/basic-textures/</link>
+      <pubDate>Fri, 10 Nov 2023 11:17:36 +0530</pubDate>
       
-      <guid>https://vihanga-marasinghe.netlify.app/graphics-log/barber-pole/</guid>
+      <guid>https://vihanga-marasinghe.netlify.app/graphics-log/basic-textures/</guid>
       <description></description>
     </item>
     
@@ -70,9 +88,18 @@
     </item>
     
     <item>
+      <title>Creating an Animated Barber Pole with OpenGL</title>
+      <link>https://vihanga-marasinghe.netlify.app/graphics-log/barber-pole/</link>
+      <pubDate>Wed, 25 Oct 2023 00:00:00 +0530</pubDate>
+      
+      <guid>https://vihanga-marasinghe.netlify.app/graphics-log/barber-pole/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Animated Clock using 2D Graphics</title>
       <link>https://vihanga-marasinghe.netlify.app/graphics-log/cg-2/</link>
-      <pubDate>Wed, 01 Nov 2023 14:22:42 +0530</pubDate>
+      <pubDate>Fri, 20 Oct 2023 14:22:42 +0530</pubDate>
       
       <guid>https://vihanga-marasinghe.netlify.app/graphics-log/cg-2/</guid>
       <description></description>
@@ -81,7 +108,7 @@
     <item>
       <title>Intro into Computer Graphics</title>
       <link>https://vihanga-marasinghe.netlify.app/graphics-log/cg-1/</link>
-      <pubDate>Wed, 01 Nov 2023 14:22:30 +0530</pubDate>
+      <pubDate>Sun, 01 Oct 2023 14:22:30 +0530</pubDate>
       
       <guid>https://vihanga-marasinghe.netlify.app/graphics-log/cg-1/</guid>
       <description>Reflective Log for CS307 &amp; CS308</description>
@@ -106,7 +133,7 @@
     </item>
     
     <item>
-      <title>Joint Meeting with the Gavel Club University of Sri Jayawardenapura</title>
+      <title>Joint Meeting with the Gavel Club University of Sri Jayawardenepura</title>
       <link>https://vihanga-marasinghe.netlify.app/volunteering/gavel-usj-23/</link>
       <pubDate>Sat, 20 May 2023 17:18:53 +0530</pubDate>
       

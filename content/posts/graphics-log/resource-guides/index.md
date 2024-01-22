@@ -37,27 +37,39 @@ Embarking on the journey of learning computer graphics requires reliable resourc
 
 [ECS175](https://www.youtube.com/playlist?list=PL_w_qWAQZtAZhtzPI5pkAtcUVgmzdAP8g)
 
+{{< youtube 01YSK5gIEYQ >}}
+
 A comprehensive lecture series from UC Davis College, perfect for those who want to delve deep into theoretical concepts in computer graphics.
 
 ## 2. Carnegie Mellon University - Introductory Computer Graphics Class
 
 [CMU -Introductory Computer Graphics Class ](https://www.youtube.com/playlist?list=PL9_jI1bdZmz2emSh0UQ5iOdT2xRHFHL7E)
 
+{{< youtube W6yEALqsD7k >}}
+
 Carnegie Mellon University's introductory class is an excellent resource for building a strong foundation in the mathematical aspects of computer graphics.
 
-## 3. Scratchapixel
+## 3. Pikuma 
+
+[Pikuma](https://www.youtube.com/@pikuma)
+
+{{< youtube 7qUuzRY5YwI >}}
+
+A great Youtube channel which has indepth but understandable explanations on graphics concepts, has a very good video regarding the CG rendering pipeline.
+
+## 4. Scratchapixel
 
 [Scratchapixel](https://www.scratchapixel.com/)
 
 A free educational site that gradually introduces you to computer graphics through a series of blog posts. It also features a solid mathematics section.
 
-## 4. GeeksforGeeks
+## 5. GeeksforGeeks
 
 [GeeksforGeeks](https://www.geeksforgeeks.org)
 
 GeeksforGeeks is a reliable go-to for quick references on algorithms and fundamental concepts in computer graphics.
 
-## 5. LearnOpenGL
+## 6. LearnOpenGL
 
 [LearnOpenGL](https://learnopengl.com/)
 

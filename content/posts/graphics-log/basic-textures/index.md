@@ -1,6 +1,6 @@
 ---
-title: Basic Textures
-seo_title: Basic Textures
+title: Basic Texturing
+seo_title: Basic Texturing
 summary: 
 description: 
 slug: basic-textures

@@ -30,7 +30,7 @@ disable_comments: false
 
 ## Introduction
 
-In this  post, we'll explore the creation of an animated barber pole using GLUT (OpenGL Utility Toolkit) and OpenGL. The project involves combining graphics programming concepts with animation techniques to bring a traditional barber pole to life. 
+In this post, we'll explore the creation of an animated barber pole with OpenGL. The project involves combining graphics programming concepts with animation techniques to bring a traditional barber pole to life.
 
 ## Drawing a Cylinder
 
