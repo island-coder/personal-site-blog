@@ -4,7 +4,7 @@ seo_title: Councelling platform App
 summary: Full stack app created using Flask for mental health provisions for incarcerated individuals.
 description: Full stack app created using Flask for mental health provisions for incarcerated individuals.
 slug: portfolio-project-2
-author: John Doe
+author: Vihanga Marasinghe
 
 draft: false
 date: 2020-02-20T03:52:30-05:00
@@ -16,7 +16,7 @@ feature_image:
 feature_image_alt:
 
 project types: 
-    - Fullstack
+    - Full Stack
     - Personal
 
 techstack:

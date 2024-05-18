@@ -1,6 +1,6 @@
 ---
-title: IOT Project
-seo_title: IOT Project
+title: IOT Project - Remote lab safety
+seo_title: IOT Project - Remote lab safety
 summary: Remote safety analysis of laboratories.
 description: Remotely measuring safety of laboratories.
 slug: portfolio-project-1
@@ -26,6 +26,8 @@ techstack:
 live_url: 
 source_url: 
 ---
+
+System to continously monitor the environment of a lab with sensors and upload metrics to a cloud server.
 
 <!-- This article offers a sample of basic Markdown syntax that can be used in Hugo content files, also it shows whether basic HTML elements are decorated with CSS in a Hugo theme.
 

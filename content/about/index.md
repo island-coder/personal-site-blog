@@ -10,12 +10,12 @@ description: Learn more about my background and experience.
 
 ## Who am I?
 
-Currently a third year Computer Science undergraduate with a keen interest in computing and software solutions.
+Currently a final year Computer Science undergraduate with a keen interest in computing, software and data.
 Particularly interested in creative technology-driven solutions for real world issues in Sri Lanka and beyond.
 
 ## My Experience
 
-Currently engaged in projects relating to full stack web development and 3D graphics.
+Previously engaged in projects relating to full stack web development, image processing and 3D graphics.
 Has a track record in hackathons and coding competitions, having secured wins and placements.
 Beyond tech, I love to volunteer on and off campus while enjoying the exchange of knowledge and fresh perspectives. 
 
