@@ -33,7 +33,7 @@ newsletter: false
 
 Was involved in creating a web application to handle cataloging of the Mahamaya Girl's College Kandy library (10,000+ items) for digitalization of library facilities.
 
-Application with standard features to handle library items along with authentication.
+Application with standard CRUD features to handle library items and copies along with user authentication.
 
 ![MGCK 1 ](mgck-1.png)
 
