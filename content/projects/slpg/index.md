@@ -29,4 +29,4 @@ source_url:
 
 newsletter: false
 ---
-This project was undertaken as a primer for my undergraduate research project. This deals with semantic data representation techniques such as RDF, SPARQL and also the engineering aspects relating to that focusing on Neo4j graph databases. I'm presenting this in an [ongoing series of articles]({{< ref "/content/posts/semantics/_index.md" >}} "ongoing series of articles")
+This project was undertaken as a primer for my undergraduate research project. This deals with semantic data representation techniques such as RDF, SPARQL and also the engineering aspects relating to that focusing on Neo4j graph databases. I'm presenting this in an [ongoing series of articles]({{< ref "/content/posts/semantics/_index.md" >}} "ongoing series of articles"). As of the date of publishing this page I could not find any related studies of knowledge graphs in this domain making this more interesting.

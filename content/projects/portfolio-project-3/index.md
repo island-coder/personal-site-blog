@@ -3,7 +3,7 @@ title: Counting and Classification of Flies on Yellow sticky traps
 seo_title: Portfolio Project 3
 summary: Counting and classification of insects on yellow fly traps using image processing techniques.
 description: Counting and classification of insects on yellow fly traps using image processing techniques.
-slug: portfolio-project-3
+slug: yft
 author: Vihanga Marasignhe
 draft: false
 date: 2023-02-20T03:52:30-05:00
