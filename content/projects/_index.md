@@ -1,5 +1,5 @@
 ---
 title: Projects
-summary: Explore some of the projects I've worked on.
-description: Explore some of the projects I've worked on.
+summary: Explore some of the projects I've engaged.
+description: Explore some of the projects I've engaged.
 ---

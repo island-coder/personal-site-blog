@@ -7,16 +7,17 @@ slug: mgck-library-23
 author: Vihanga Marasinghe
 
 draft: false
+weight : 2 
 date: 2023-10-01T06:17:43+05:30
 lastmod: 
 expiryDate: 
 publishDate: 
 
-feature_image: 
+feature_image: mgck-1.png
 feature_image_alt: 
 
 project types: 
-    - Full Stack
+    - Full Stack | Collaborative
 
 techstack:
     - Java
@@ -35,7 +36,6 @@ Was involved in creating a web application to handle cataloging of the Mahamaya 
 
 Application with standard CRUD features to handle library items and copies along with user authentication.
 
-![MGCK 1 ](mgck-1.png)
 
 ![MGCK 2 ](mgck-2.png)
 

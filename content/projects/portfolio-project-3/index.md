@@ -11,7 +11,7 @@ lastmod:
 expiryDate: 
 publishDate: 
 
-feature_image: 
+feature_image:  yft_output_sample_3.png
 feature_image_alt: 
 
 project types: 
@@ -46,6 +46,3 @@ monitoring and decision support in agricultural contexts.
 
 This solution emphasizes the potential of image processing as a practical and resource-efficient tool,
 with promising implications for entomological research and agricultural pest management.
-
-
-![Yellow Fly Trap](yft_output_sample_3.png)

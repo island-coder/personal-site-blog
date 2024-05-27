@@ -7,21 +7,23 @@ slug: secprac-app
 author: Vihanga Marasinghe
 
 draft: false
+weight: 1
 date: 2024-03-01T10:14:49+05:30
 lastmod: 
 expiryDate: 
-publishDate: 
+publishDate:  2024-05-27
 
-feature_image: 
+feature_image: modules.png
 feature_image_alt: 
 
 project types: 
-    - Full Stack
+    - Full Stack | Collaborative 
 
 techstack:
     - Java
     - Spring Ecosystem
     - Thymeleaf
+    - GCP 
 
 live_url: 
 source_url: 
@@ -54,7 +56,7 @@ We carefully managed the project, conducting regular team and client meetings to
   
 - **Document Handling:** I facilitated integration with Google Drive API, enabling efficient document management and ensuring seamless access and collaboration.
 
-- **Deployment:** Personally handled test deployment on GCP Cloud Run with a Google Cloud SQL database.
+- **Deployment:** Personally handled test deployment on GCP Cloud Run with a Google Cloud SQL database.This involved managing certain authorization related tasks such as handling Service Accounts and working on the Google Cloud CLI.
 
 ## Other  Contributions
 
