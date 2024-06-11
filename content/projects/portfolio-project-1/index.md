@@ -24,10 +24,11 @@ techstack:
     - Raspberry Pie
     - Python
     - Twillio
+    - Gmail SMTP
 live_url: 
 source_url: 
 ---
 
-Microcontroller based system to continously monitor the environment of a lab with sensors and upload metrics to a cloud server.
-Real time monitoring an upload of temperature, flame, smoke and gases.
-Facial recognition system for lab employees. 
+Developed a microcontroller-based system to continuously monitor lab environment metrics like temperature, flame, smoke, and gases using Arduino. Utilized a serially connected Raspberry Pi for publishing updates via email and text messages
+
+Additional deployed a face recognition model on the Raspberry Pi and implemented attendance counting using a webcam.

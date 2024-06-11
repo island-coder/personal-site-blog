@@ -1,8 +1,8 @@
 ---
-title: Library Cataloging System for Mahamaya Girls College Kandy
-seo_title: Library Cataloging System for Mahamaya Girls College Kandy
-summary: Web application for cataloging library items. 
-description: Web application for cataloging library items. 
+title: Library Digitalization of Mahamaya Girls College Kandy
+seo_title: Library Digitalization of Mahamaya Girls College Kandy
+summary: Digitalization project undertaken at a national school in Kandy. 
+description: Digitalization project undertaken at a national school in Kandy. 
 slug: mgck-library-23
 author: Vihanga Marasinghe
 
@@ -32,11 +32,13 @@ newsletter: false
 
 ## Description:
 
-Was involved in creating a web application to handle cataloging of the Mahamaya Girl's College Kandy library (10,000+ items) for digitalization of library facilities.
+Analyzed requirements and developed a full-stack application to digitize the cataloging of over 10,000 library items for a national school in Kandy. The system includes item handling, basic authentication,    barcode generation and supports the Dewey Decimal Classification system. 
 
-Application with standard CRUD features to handle library items and copies along with user authentication.
+Also in conjunction provided assistance to launch [‘Diviya Dinana Vidyuth Pothak’]({{< ref "/content/posts/volunteering/mahamaya-ebooks-launch-23/index.md" >}} "ongoing series of articles") initiative which successfully released more than 700 student-written e-books to the web.
 
 
 ![MGCK 2 ](mgck-2.png)
 
 ![MGCK 3 ](mgck-3.png)
+
+![MGCK 4 ](mgck-4.jpeg)
